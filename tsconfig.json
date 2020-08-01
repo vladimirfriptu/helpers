@@ -1,0 +1,17 @@
+{
+  "extends": "@packages/configs/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src/",
+    "declaration": true,
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "build",
+    "esModuleInterop": true,
+    "allowJs": false,
+    "noEmit": false,
+    // TODO поменать на true, после исправления ошибок типизации
+    "strictNullChecks": false,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build"]
+}
